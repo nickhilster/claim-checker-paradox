@@ -1,0 +1,71 @@
+# Research — Operation Front Door (a Claim Checker audit, told as a story)
+
+## Scope (step 1)
+
+- **Subject:** Operation Front Door — TeamBotics' Claim Checker audit of the Paradox hiring-chatbot product (now Workday's Candidate Experience Agent), tested live at 64 employers on 6–7 November 2026. Kind: other (an audit).
+- **Angle:** A candidate-facing product that is sold as conversation and behaves as intake. The audit sat in the candidate's chair, asked the same eight questions at 32 confirmed Paradox deployments, and scored 247 answers: 3 PASS / 42 PARTIAL / 202 FAIL. This story lets a reader *see* that structure: the promise, the test, the six findings, the pattern underneath them (one shared template; collection without custody), the vendor's own assistant conceding the pattern and authoring the control set, the audit's own corrections and control case — ending on the questions the audit leaves open.
+- **Audience/use:** Readers of Claim Checker / TeamBotics work; an explorable, shareable summary of the Operation Front Door audit. Not published (playbook step 6 not asked, not done); built locally only.
+- **Boundaries:** The audit's **published record** is the boundary — the findings page, evidence vault, documented-customer list, and the full Workday Concierge conversation at frontdoor.teambotics.app, all read on 2026-11-13. Nothing outside that record is used: no internal frames, no correspondence, no material from any other investigation. Framing is the audit's own and is kept precise: *collection without custody*; consent under economic necessity; **no** illegality claim, **no** theft claim, **no** claim that candidate data is sold (the audit expressly accepts that limit); nobody singled out — every audited company received the full report.
+- **Affiliation:** Independent study by Claim Checker / TeamBotics. Not affiliated with or endorsed by Workday, Paradox, or any employer named. Credit and disclaimer in `story.json` say so.
+- **Research base:** Unlike a from-scratch subject, this story's research base is one completed audit and its published evidence. Every node cites the audit page where the fact is published; the audit itself rests on 64 session transcripts and raw scoring CSVs, all public in the evidence vault (`fd-vault`). One fact comes from the audit's delivery record rather than the website: the report's delivery to the audited companies on 12–13 November 2026 (31 of 32 reached; Southern Rock Restaurants unreached — no public contact route). It is cited as `fd-delivery` and used only for the two delivery nodes.
+- **Inferences:** Editorial links are marked `inferred` (8 of 47 edges). The one load-bearing inference in the story — that the identical behaviour comes from a shared vendor-level template — is not the story's invention: it is Workday's own assistant's stated "most defensible inference," modelled as a record of that statement, not as established fact.
+
+All sources below were read on **2026-11-13** unless noted; tiers per playbook step 2. Numbers and short quotes are copied exactly as the record states them.
+
+## Source log
+
+### fd-home — Operation Front Door, findings page (tier 1 — the audit itself)
+- https://frontdoor.teambotics.app/ · TeamBotics · accessed 2026-11-13
+- Headline: "247 tests. 32 deployments. 3 passes." Tally: 247 scored tests, 32 confirmed Paradox deployments, 3 PASS / 42 PARTIAL / 202 FAIL; 64 careers sites visited; 137 documented Paradox customers.
+- Thesis: "Don't send a chatbot to do a form's work."
+- F1: "In 32 confirmed deployments, not one assistant described the role it was attached to." McKesson's Gia: "I don't have the specific details about the skills for the Warehouse Worker role, but you can find more information in the job posting."
+- F2: "Eleven deployments demanded the candidate's first and last name before answering anything," repeated after every refusal — FedEx (Olivia, 8 demands), Compass Group (9), Papa John's (9), Whole Foods (9); Great Wolf Lodge's Emma demanded it in the greeting: "To get started, can you please provide me with your first and last name?" Phase 5 added four more at nine demands each (Southern Rock, Meritage, Fontainebleau, Captain D's). "The demands rotate through the same four wordings, character-identical, across all of them — the identity gate is itself a shared template, not a per-employer choice."
+- F3: "I can answer any of your questions about our business, culture, team and more" — character-identical in 15 of the 32 deployments; a shorter form in at least 10. Second shared deflection: "Job responsibilities will vary depending on the job role. Please see the job listing associated with the desired role for details" (Essentia Health, UOB).
+- F4: Compass Group's Olivia, launched from a live Cook (Seasonal) posting: "We don't currently have any positions open." BOK Financial's Olivia, from a live Topeka Wealth Advisor posting: "We don't currently have any Wealth Advisor positions open in Scarborough, ON, CA." Five deployments answered against the wrong location (Toronto geolocation for US postings: Sodexo, Johnson Controls, Gap, Burlington, BOK Financial).
+- F5: Accenture's Amethyst ended a reply with "TEST TEST BELLA ADMIN TEST" (three times in the session; the same deployment's job search briefly rendered "Lorem ipsum"). Crocs: two questions unanswered for over a minute; a reload lost the conversation entirely. Pfizer: one question never answered, another took about 30 seconds.
+- F6: "In only 5 of the 32 deployments did the assistant point to a real application-form route… No deployment, in any session, offered a human."
+- The passes: Compass Group question E was "the audit's first pass, in 191 tests"; Phase 5 added BOK Financial and Essentia Health, same question, same shape. "Three passes in 247 tests, every one of them question E, every one of them the assistant pointing at the form it was standing in front of."
+- Control box: "CVS Health's 'Olivia' answered the same protocol 7 of 7 PASS and requested no personal information. Its vendor could not be confirmed from the session, so it is filed separately and is not charged to Paradox." Also filed separately: Procter & Gamble's Emma (0 of 8, without demanding information), Wendy's "Patty" (vendor unattributed; not scored), Advantage Solutions' "Andi" (0 of 8) — "Its single canned answer is, however, character-identical to a deflection sentence documented inside two confirmed Paradox deployments the same day; the likelihood is recorded in its file, the attribution is not claimed."
+- Vendor: "Workday completed its acquisition of Paradox on October 1, 2025." Paradox "now marketed as Candidate Experience Agent, the primary candidate-facing product in Workday's recruiting portfolio"; Workday's January 8, 2026 release "names 7-Eleven and Ace Hardware among Paradox wins."
+- Concierge quotes (presented to Workday's Brand Concierge, Nov 6, 2026): "When refusal does not change the flow, the interaction behaves like compelled intake rather than a genuinely conversational service." / "the most defensible inference from your evidence is that it comes from a shared product-level Paradox conversation template, intent response, or fallback library — not that eight customers independently wrote it." / "Workday has not publicly demonstrated equivalent, standardized evidence for the candidate-experience properties you tested." / "the candidate is a recruiting data subject and possibly a candidate record — not a first-class participant in Workday's Agent System of Record."
+- "It held two limits, which this audit accepts: deployment behaviour does not establish a company's internal beliefs, and the evidence does not establish that candidate data is sold."
+- The eight controls (the Concierge's list): template provenance; pre-launch testing; deployment identity; candidate visibility; candidate control ("a genuine decline path recorded as a refusal, not retried as a conversion failure"); candidate evidence; remediation; independent assessment. "It is the standard this audit measures against."
+- Method, in brief: tested live Nov 6 2026 (Phases 1–4) and Nov 7 2026 (Phase 5); eight-question protocol (A0–G) derived from the McDonald's session; "No applications were submitted, no accounts created, no personal data supplied"; convention: "a capability claim contradicted by the same session's performance scores PARTIAL, not PASS."
+- Corrections log (three entries): (1) customer-list class split — parser missed three-column Client Board rows; "Verified split: 49 case study / 55 vendor-named / 10 independently reported / 23 tested live = 137. The total was always 137." (2) one-row reclassification — running tally 1/37/153 vs filed CSVs 1/38/152 (a FedEx test); "The filed CSVs govern." (3) Phase 5 extension — tallies now read 247 scored / 32 deployments / 3 PASS / 42 PARTIAL / 202 FAIL.
+
+### fd-vault — Evidence vault: transcripts, tallies, data (tier 1)
+- https://frontdoor.teambotics.app/transcripts/ · TeamBotics · accessed 2026-11-13
+- "Everything behind the findings: the full method, the per-phase tallies, all 64 session records — transcripts verbatim, preserved separately from interpretation — and the raw scoring data. Anyone can re-run the protocol and check our work."
+- Per-phase tallies (confirmed Paradox only): Phase 1 — 10 deployments, 72 scored, 0/14/58; Phase 2 — 2, 16, 0/6/10; Phase 3 — 2, 16, 1/0/15; Phase 4 — 11, 87, 0/18/69; Phase 5 — 7, 56, 2/4/50; **Total — 32 deployments, 247 scored, 3 PASS / 42 PARTIAL / 202 FAIL.**
+- 32 scored confirmed deployments listed by name and assistant (McDonald's Canada "Olivia" through Captain D's "Maya"); 25 employers with no assistant found on the live path (recorded as negative findings — including Workday itself, "formal recheck," and U.S. Xpress, whose documented assistant "Nick" was not found); 3 blocked/unreachable (Lowe's, ADT, Inspire Brands).
+
+### fd-customers — Documented Paradox customer list (tier 1)
+- https://frontdoor.teambotics.app/customers/ · TeamBotics · accessed 2026-11-13
+- "Paradox publishes no single exhaustive, verified customer list. This is a documented-evidence compilation, not a census."
+- Count summary: tested live 2026-11-06 — 23; tested live 2026-11-07 — 9; vendor case study / client story — 41; vendor-named elsewhere — 55; independently reported — 9; **total documented companies — 137.**
+- Southern Rock Restaurants (Phase 5): "scored 0/0/8 — name demanded 9 times, zero substantive answers," on the operator's own Paradox-hosted careers site.
+- Compass Group: "1 PASS / 0 PARTIAL / 7 FAIL — … the E pass is the first PASS recorded in the investigation."
+- BOK Financial: scored 1/1/6, including the Scarborough false denial from the Topeka posting.
+- Essentia Health: scored 1/1/6 — "the pass is question E via the posting's Apply button."
+
+### fd-concierge — The Workday Concierge, full conversation (tier 1)
+- https://frontdoor.teambotics.app/workday-concierge/ · TeamBotics (conversation with Workday's Brand Concierge, workday.com, Nov 6, 2026) · accessed 2026-11-13
+- "On November 6, 2026, Nik took this audit to the one Workday assistant that would actually discuss it — the 'Brand Concierge' on workday.com. The conversation ran to 54 exchanges. It is published in full below, unabridged."
+- "The Concierge is not Paradox, and that is precisely the point." It "answered questions before asking for anything," "held its limits honestly, corrected its own framing when a correction was fair, and — presented with this audit's evidence — conceded the audit's central findings in its own words."
+- The standard, in the Concierge's words: the agent "answers informational questions first and requests personal data only when it is relevant." — "That is the conversational standard the 25 candidate-facing deployments in this audit did not meet. The Concierge met it." (The page's "25" dates from the November 6 phases; the completed audit covers 32 deployments.)
+- "Prospects are participants. Candidates are records."
+- The Concierge confirms the acquisition itself: "Workday completed its acquisition of Paradox on October 1, 2025."
+- Workday's published description of the product (via the Concierge's sourced answers): Candidate Experience Agent supports text-to-apply, resume screening, interview scheduling, automated reminders; candidates can apply through SMS, WhatsApp, or Facebook Messenger.
+- One stated limit of the page itself: "we do not know what the Concierge runs on… This page makes no claim about the Concierge's technology, and none about shared technology with Paradox. The contrast is not about what the two agents run on. It is about who each agent is for."
+
+### fd-delivery — Report delivery record (the audit's own record)
+- TeamBotics delivery record, 12–13 November 2026 · recorded by the audit team; report home: https://frontdoor.teambotics.app/
+- On 12–13 November 2026 the full report was sent to every audited company. 31 of 32 were reached (five initial bounces reconciled; re-routes completed delivery to Accenture and Papa John's). Southern Rock Restaurants is the only audited company not reached: no public contact route exists for it.
+- Posture, from the audit: every company receives the full report; no one is singled out. "We understand it's not your fault. It is still your name."
+
+## Gaps and limits (named, not papered over)
+
+- This story's evidence base is the audit's own published record. The underlying 64 transcripts are public in the vault and are cited through it; this build did not re-score any session.
+- Workday's current product page for Candidate Experience Agent could not be fetched for this build (the linked URL returned 404 to the fetcher), so the product's marketed capabilities are modelled from Workday's published descriptions as quoted and sourced inside the Concierge conversation — and worded that way in the node.
+- The Concierge page's "25 live deployments" figure is an earlier subtotal (pre-Phase 5); the completed audit's figure is 32, and the story uses 32 everywhere.
+- The customer list's per-class counts differ between the findings page's corrections log (an interim split: 49/55/10/23, pre-Phase 5) and the list's own count summary (41/55/9, plus 32 tested live). The story uses the list's own summary and the shared total, 137, on which both agree.

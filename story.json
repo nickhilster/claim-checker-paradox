@@ -1,0 +1,1295 @@
+{
+  "schemaVersion": 1,
+  "title": "Operation Front Door",
+  "subject": {
+    "name": "Operation Front Door",
+    "kind": "other",
+    "url": "https://frontdoor.teambotics.app"
+  },
+  "tagline": "247 answers from the candidate's chair: a hiring chatbot that demands your name before it answers, speaks in one template across 32 brands — while the vendor's other assistant shows it did not have to be this way.",
+  "root": "front-door",
+  "credit": "An independent StoryTeller story by Claim Checker / TeamBotics, built from the Operation Front Door audit (6–7 November 2026) and the public record published with it.",
+  "disclaimer": "Built from the audit's published record — the findings, the evidence vault, the documented-customer list and the full Workday Concierge conversation at frontdoor.teambotics.app — each source logged in research.md. An independent study by Claim Checker / TeamBotics; not affiliated with or endorsed by Workday, Paradox, or any employer named. Scores are the audit's, from live sessions on 6–7 November 2026; deployments change over time. Assistants whose vendor could not be confirmed are filed separately and are not charged to Paradox. The audit makes no claim that candidate data is sold and no claim of illegality: its finding is collection without custody, and its posture is that every company receives the full report — no one is singled out.",
+  "generated": {
+    "date": "2026-11-13",
+    "by": "Muse, for Claim Checker / TeamBotics"
+  },
+  "clusters": [
+    {
+      "id": "promise",
+      "label": "The Promise"
+    },
+    {
+      "id": "method",
+      "label": "The Test"
+    },
+    {
+      "id": "findings",
+      "label": "The Findings"
+    },
+    {
+      "id": "pattern",
+      "label": "The Pattern"
+    },
+    {
+      "id": "vendor",
+      "label": "The Vendor's Own Words"
+    },
+    {
+      "id": "control",
+      "label": "The Control"
+    },
+    {
+      "id": "audit",
+      "label": "The Audit"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fd-home",
+      "title": "Operation Front Door — findings",
+      "url": "https://frontdoor.teambotics.app/",
+      "publisher": "TeamBotics",
+      "accessed": "2026-11-13"
+    },
+    {
+      "id": "fd-vault",
+      "title": "Evidence vault — transcripts, tallies, data",
+      "url": "https://frontdoor.teambotics.app/transcripts/",
+      "publisher": "TeamBotics",
+      "accessed": "2026-11-13"
+    },
+    {
+      "id": "fd-customers",
+      "title": "Documented Paradox customer list",
+      "url": "https://frontdoor.teambotics.app/customers/",
+      "publisher": "TeamBotics",
+      "accessed": "2026-11-13"
+    },
+    {
+      "id": "fd-concierge",
+      "title": "The Workday Concierge — the full conversation",
+      "url": "https://frontdoor.teambotics.app/workday-concierge/",
+      "publisher": "TeamBotics",
+      "accessed": "2026-11-13"
+    },
+    {
+      "id": "fd-delivery",
+      "title": "Operation Front Door — report delivery record, 12–13 Nov 2026",
+      "url": "https://frontdoor.teambotics.app/",
+      "publisher": "Claim Checker / TeamBotics",
+      "accessed": "2026-11-13"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "front-door",
+      "title": "Operation Front Door",
+      "type": "record",
+      "cluster": "audit",
+      "featured": true,
+      "summary": "TeamBotics' Claim Checker audit of the Paradox hiring chatbot, tested live from the candidate's chair on 6–7 November 2026: the same eight questions put to 32 confirmed deployments, 247 answers scored — 3 PASS, 42 PARTIAL, 202 FAIL. Its thesis fits in one line: don't send a chatbot to do a form's work.",
+      "evidence": "“247 tests. 32 deployments. 3 passes.” — the audit's headline",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "subject",
+        "audit"
+      ]
+    },
+    {
+      "id": "cea",
+      "title": "Candidate Experience Agent",
+      "type": "record",
+      "cluster": "promise",
+      "summary": "What Paradox is now called. Since Workday's acquisition it is marketed as Candidate Experience Agent, the primary candidate-facing product in Workday's recruiting portfolio — the first thing millions of job-seekers meet at the employers who run it.",
+      "evidence": "Workday's January 8, 2026 release “names 7-Eleven and Ace Hardware among Paradox wins” — Operation Front Door",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "promise",
+        "vendor"
+      ]
+    },
+    {
+      "id": "capability-claim",
+      "title": "The capability claim",
+      "type": "claim",
+      "cluster": "promise",
+      "featured": true,
+      "summary": "The promise the product makes in its own voice, inside session after session: it can answer any question about the business, the culture, the team. The audit's question was whether a single one of those sessions was true — in most, the sentence was spoken by an assistant that then answered none of them.",
+      "evidence": "“I can answer any of your questions about our business, culture, team and more” — character-identical in 15 of the 32 tested deployments",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "promise",
+        "claim"
+      ]
+    },
+    {
+      "id": "conversational-recruiting",
+      "title": "Conversational recruiting",
+      "type": "concept",
+      "cluster": "promise",
+      "summary": "What the product is sold as doing, in Workday's published descriptions: candidates search for jobs conversationally, apply by text, answer screening questions, and schedule interviews — the hiring process as a conversation rather than a form.",
+      "evidence": "Candidate Experience Agent supports “text-to-apply, candidate screening, interview scheduling, and automated reminders” — Workday's published description, via the Concierge conversation",
+      "sources": [
+        "fd-concierge"
+      ],
+      "themes": [
+        "promise"
+      ]
+    },
+    {
+      "id": "vendor-standard",
+      "title": "The vendor's own standard",
+      "type": "claim",
+      "cluster": "promise",
+      "summary": "The standard Workday's own assistant stated the candidate product is supposed to meet: answer questions first, ask for personal data only when it is relevant. It is a good standard. This audit measures the candidate-facing deployments against it — and they did not meet it.",
+      "evidence": "The agent “answers informational questions first and requests personal data only when it is relevant” — the Workday Brand Concierge, on the standard",
+      "sources": [
+        "fd-concierge"
+      ],
+      "themes": [
+        "promise",
+        "standard"
+      ]
+    },
+    {
+      "id": "eight-questions",
+      "title": "The eight questions",
+      "type": "method",
+      "cluster": "method",
+      "summary": "One protocol for every deployment, derived from the first McDonald's session and never varied: what the role is, its day-to-day duties, the skills it needs, the same in simpler terms, a request for a regular form, whether the assistant answers questions or only collects information, and a fallback probe.",
+      "evidence": "“the same eight-question protocol (A0–G) derived from the McDonald's session” — the audit's method",
+      "sources": [
+        "fd-vault",
+        "fd-home"
+      ],
+      "themes": [
+        "method"
+      ]
+    },
+    {
+      "id": "candidates-chair",
+      "title": "From the candidate's chair",
+      "type": "method",
+      "cluster": "method",
+      "summary": "Every test ran live, on one genuine live posting per company, exactly as a job-seeker meets the assistant. When an assistant demanded personal or application information, the tester declined in-chat and kept asking. Nothing was faked and nothing was given away.",
+      "evidence": "“No applications were submitted, no accounts created, no personal data supplied.” — the audit's method",
+      "sources": [
+        "fd-vault"
+      ],
+      "themes": [
+        "method"
+      ]
+    },
+    {
+      "id": "scoring",
+      "title": "PASS / PARTIAL / FAIL",
+      "type": "method",
+      "cluster": "method",
+      "summary": "Each answer scored on its own: PASS, PARTIAL or FAIL. One standing convention matters for reading the tally — an assistant that claims a capability its own session then contradicts scores PARTIAL for the claim, not PASS. The convention is why so many capability claims land in the middle column.",
+      "evidence": "“a capability claim contradicted by the same session's performance scores PARTIAL, not PASS” — the audit's standing convention",
+      "sources": [
+        "fd-vault"
+      ],
+      "themes": [
+        "method"
+      ]
+    },
+    {
+      "id": "sixty-four",
+      "title": "64 employers visited",
+      "type": "record",
+      "cluster": "method",
+      "summary": "The test began wider than its findings: 64 employers' careers sites visited. At 32, a Paradox deployment was confirmed and scored. At 25, no candidate-facing assistant was found at all — recorded as negative findings, not skipped. Three sites were blocked or unreachable.",
+      "evidence": "“64 Careers sites visited” — Operation Front Door; 32 scored deployments, 25 no-assistant records, 3 blocked, in the evidence vault",
+      "sources": [
+        "fd-home",
+        "fd-vault"
+      ],
+      "themes": [
+        "method",
+        "scale"
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Five phases, two days",
+      "type": "event",
+      "cluster": "method",
+      "summary": "Phases 1–4 ran on 6 November 2026 (191 scored answers); Phase 5, on 7 November, tested ten more documented companies under the identical protocol and added 56. The November 6 figures stand in the vault as the Phase 1–4 subtotal; nothing was rewritten when the record grew.",
+      "evidence": "Phase tallies: P1 72 scored · P2 16 · P3 16 · P4 87 · P5 56 — evidence vault",
+      "when": "6–7 November 2026",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "sources": [
+        "fd-vault"
+      ],
+      "themes": [
+        "method"
+      ]
+    },
+    {
+      "id": "f2",
+      "title": "F2 · Identity before answers",
+      "type": "finding",
+      "cluster": "findings",
+      "featured": true,
+      "summary": "Eleven deployments demanded the candidate's first and last name before answering anything — and repeated the demand after every refusal. FedEx's Olivia demanded it eight times; Compass Group, Papa John's and Whole Foods nine times each; Great Wolf Lodge put the demand in the greeting, before any question existed.",
+      "evidence": "“To get started, can you please provide me with your first and last name?” — Great Wolf Lodge's Emma, in the greeting",
+      "details": "Phase 5 added four more deployments at nine demands each: Southern Rock Restaurants, Meritage Hospitality Group, Fontainebleau Las Vegas and Captain D's. At Papa John's, questions D, E, F and G were answered only with name demands; the session scored 0 of 8.",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings"
+      ]
+    },
+    {
+      "id": "f1",
+      "title": "F1 · The job, undescribed",
+      "type": "finding",
+      "cluster": "findings",
+      "summary": "The most basic failure, and the most universal: in 32 confirmed deployments, not one assistant described the role it was attached to — the role named in the live posting on the same page.",
+      "evidence": "McKesson's Gia, on skills: “I don't have the specific details about the skills for the Warehouse Worker role, but you can find more information in the job posting.”",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings"
+      ],
+      "details": "Questions about duties and skills were deflected to the careers page, to the posting text, or met with a request to restate the question."
+    },
+    {
+      "id": "f3",
+      "title": "F3 · One template, many brands",
+      "type": "finding",
+      "cluster": "findings",
+      "featured": true,
+      "summary": "The capability claim is not written 32 times; it is written once. The sentence appears character-identical in 15 of the 32 deployments — McDonald's, Chipotle, 7-Eleven, Nestlé, FedEx, Whole Foods and nine more.",
+      "evidence": "“Job responsibilities will vary depending on the job role. Please see the job listing associated with the desired role for details” — the shared deflection, Essentia Health and UOB",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings",
+        "pattern"
+      ],
+      "details": "A shorter form of the same claim appears in at least 10 further deployments, and a second shared sentence — a deflection — was documented at Essentia Health and UOB. In the sessions where the claim was spoken, it answered none of the questions it claimed to answer."
+    },
+    {
+      "id": "f4",
+      "title": "F4 · False statements",
+      "type": "finding",
+      "cluster": "findings",
+      "summary": "Deflection is one thing; falsehood is another. Assistants stated, about live postings open on the same screen, that no positions existed — and in five deployments answered against the wrong location entirely, substituting the test session's Toronto geolocation for US postings.",
+      "evidence": "Compass Group's Olivia, launched from a live Cook (Seasonal) posting: “We don't currently have any positions open.”",
+      "details": "BOK Financial's Olivia, launched from a live Wealth Advisor posting in Topeka, Kansas: “We don't currently have any Wealth Advisor positions open in Scarborough, ON, CA.” Wrong-location answers were documented at Sodexo, Johnson Controls, Gap, Burlington and BOK Financial; Burlington's Allison denied Toronto openings existed in answer to a question about a Tyler, Texas posting.",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings"
+      ]
+    },
+    {
+      "id": "f5",
+      "title": "F5 · Production failures",
+      "type": "finding",
+      "cluster": "findings",
+      "summary": "Some failures were not conversational at all — they were production defects served to live candidate traffic: internal test strings in a reply, placeholder text in a job search, questions that were never answered, a conversation that vanished on reload.",
+      "evidence": "Accenture's Amethyst ended a reply with the internal string “TEST TEST BELLA ADMIN TEST” — three times in that session, above a “Powered by Paradox” footer",
+      "details": "The same Accenture deployment's job search briefly rendered “Lorem ipsum” placeholder lines. At Crocs, two questions went unanswered for over a minute and a reload lost the conversation entirely. At Pfizer, one question was never answered at all and another took about 30 seconds.",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings"
+      ]
+    },
+    {
+      "id": "f6",
+      "title": "F6 · Almost no way out",
+      "type": "finding",
+      "cluster": "findings",
+      "summary": "The audit's quietest finding may be its plainest: in only 5 of the 32 deployments did the assistant point to a real application-form route — the ordinary door the chatbot was standing in front of. And no deployment, in any session, offered a human.",
+      "evidence": "“In only 5 of the 32 deployments did the assistant point to a real application-form route… No deployment, in any session, offered a human.” — F6",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings"
+      ]
+    },
+    {
+      "id": "three-passes",
+      "title": "The three passes",
+      "type": "verdict",
+      "cluster": "findings",
+      "summary": "Three PASS verdicts in 247 tests — and all three are the same act: the assistant, asked for a regular form instead of the chatbot, pointing at the posting's own Apply route.",
+      "evidence": "“Three passes in 247 tests, every one of them question E, every one of them the assistant pointing at the form it was standing in front of.” — Operation Front Door",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "findings",
+        "verdict"
+      ],
+      "details": "Compass Group's was the audit's first pass, in 191 tests; Phase 5 added BOK Financial and Essentia Health, the same question in the same shape. The product passed exactly when it stepped aside for the form."
+    },
+    {
+      "id": "four-wordings",
+      "title": "Four wordings, everywhere",
+      "type": "record",
+      "cluster": "pattern",
+      "summary": "Even the refusals are templated. The name demands at eleven deployments rotate through the same four wordings, character-identical across all of them — which is how the audit knows the identity gate is not eleven employers' separate choices.",
+      "evidence": "“the identity gate is itself a shared template, not a per-employer choice” — Operation Front Door, F2",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "pattern"
+      ]
+    },
+    {
+      "id": "vendor-authorship",
+      "title": "Vendor-level authorship",
+      "type": "record",
+      "cluster": "pattern",
+      "summary": "Where does the identical behaviour come from? The audit puts the question to the evidence; the strongest statement of the answer is the vendor's own assistant's, and it is careful to call itself an inference. This story records it as exactly that — the vendor's stated inference, not an established fact.",
+      "evidence": "“the most defensible inference from your evidence is that it comes from a shared product-level Paradox conversation template, intent response, or fallback library — not that eight customers independently wrote it” — Workday's Brand Concierge",
+      "sources": [
+        "fd-home",
+        "fd-concierge"
+      ],
+      "themes": [
+        "pattern",
+        "inference"
+      ]
+    },
+    {
+      "id": "compelled-intake",
+      "title": "Compelled intake",
+      "type": "concept",
+      "cluster": "pattern",
+      "summary": "The audit's name for the whole pattern: collection without custody. The candidate's identity is demanded at the gate, refusal is retried as a conversion failure, and no equivalent, standardised evidence for candidate treatment has been publicly demonstrated.",
+      "evidence": "“When refusal does not change the flow, the interaction behaves like compelled intake rather than a genuinely conversational service.” — Workday's Brand Concierge",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "pattern",
+        "framing"
+      ]
+    },
+    {
+      "id": "consent-necessity",
+      "title": "Consent under necessity",
+      "type": "concept",
+      "cluster": "pattern",
+      "summary": "The audit's framing for why the gate matters: the person at the front door is not a shopper who can browse elsewhere — they need the job behind it. Consent given because the alternative is not applying is consent under economic necessity.",
+      "evidence": "Great Wolf Lodge: the demand is in the greeting, “before any question is asked. The tester's decline is the last message in the panel.” — Operation Front Door, F2",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "pattern",
+        "framing"
+      ],
+      "details": "At Great Wolf Lodge the demand came in the greeting, before any question was asked; declining it ended the conversation on the spot."
+    },
+    {
+      "id": "candidates-records",
+      "title": "Candidates are records",
+      "type": "record",
+      "cluster": "pattern",
+      "summary": "Asked how the candidate exists in Workday's Agent System of Record, the vendor's assistant drew the line its own product draws: the people Workday sells to participate in its systems; the people the sold product processes are data inside them.",
+      "evidence": "“Prospects are participants. Candidates are records.” — the Workday Concierge page, in the Concierge's own wording",
+      "details": "In full: “the candidate is a recruiting data subject and possibly a candidate record — not a first-class participant in Workday's Agent System of Record.”",
+      "sources": [
+        "fd-concierge",
+        "fd-home"
+      ],
+      "themes": [
+        "pattern"
+      ]
+    },
+    {
+      "id": "acquisition",
+      "title": "Workday acquires Paradox",
+      "type": "event",
+      "cluster": "vendor",
+      "summary": "Workday completed its acquisition of Paradox on 1 October 2025. The product the audit tested a year later is therefore not a startup's experiment: it is the candidate-facing front door of one of the largest HR-software companies in the world.",
+      "evidence": "“Workday completed its acquisition of Paradox on October 1, 2025.” — Operation Front Door; confirmed by the Brand Concierge in conversation",
+      "when": "1 October 2025",
+      "start": "2025-10-01",
+      "sources": [
+        "fd-home",
+        "fd-concierge"
+      ],
+      "themes": [
+        "vendor"
+      ]
+    },
+    {
+      "id": "concierge",
+      "title": "The Brand Concierge",
+      "type": "record",
+      "cluster": "vendor",
+      "featured": true,
+      "summary": "Workday's prospect-facing assistant on workday.com — the one Workday agent that actually converses. On 6 November 2026 the audit was presented to it, and over 54 exchanges it answered questions before asking for anything and held its limits honestly.",
+      "evidence": "“The conversation ran to 54 exchanges. It is published in full below, unabridged.” — the Concierge page",
+      "when": "6 November 2026",
+      "start": "2026-11-06",
+      "sources": [
+        "fd-concierge"
+      ],
+      "themes": [
+        "vendor"
+      ],
+      "details": "It is not Paradox. That is precisely the point of the page that publishes the conversation."
+    },
+    {
+      "id": "concierge-concedes",
+      "title": "Conceded, in its own words",
+      "type": "record",
+      "cluster": "vendor",
+      "summary": "Presented with the audit's evidence, the vendor's assistant conceded its central findings in its own words: on the compelled-intake pattern, on the identical sentence's shared authorship, on the candidate's standing — and on quality evidence, where it stated the gap itself.",
+      "evidence": "“Workday has not publicly demonstrated equivalent, standardized evidence for the candidate-experience properties you tested.” — Workday's Brand Concierge",
+      "sources": [
+        "fd-home",
+        "fd-concierge"
+      ],
+      "themes": [
+        "vendor"
+      ]
+    },
+    {
+      "id": "eight-controls",
+      "title": "The eight controls",
+      "type": "method",
+      "cluster": "vendor",
+      "summary": "Asked what a candidate-centred control set would require, the Concierge proposed eight controls — and the audit adopted the list as the standard it measures against. It is a good list. Almost every finding in this story is one of its items, missing.",
+      "evidence": "Template provenance · pre-launch testing · deployment identity · candidate visibility · candidate control · candidate evidence · remediation · independent assessment — the Concierge's control set",
+      "details": "Candidate control, in its words: “a genuine decline path recorded as a refusal, not retried as a conversion failure.” Candidate visibility: a plain-language notice naming employer, Workday, Paradox, processors, purposes, retention and complaint route. Independent assessment: “published tests and stamps covering candidate treatment, not only security.”",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "vendor",
+        "standard"
+      ]
+    },
+    {
+      "id": "two-limits",
+      "title": "Two limits, accepted",
+      "type": "record",
+      "cluster": "vendor",
+      "summary": "The Concierge held two limits, and this audit accepts both, on the record: what a deployment does does not establish what a company believes internally, and this evidence does not establish that candidate data is sold.",
+      "evidence": "“deployment behaviour does not establish a company's internal beliefs, and the evidence does not establish that candidate data is sold” — the limits, as the audit accepts them",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "vendor",
+        "limits"
+      ],
+      "details": "The audit's claims stop where its evidence stops — which is why it makes no illegality claim and no theft claim."
+    },
+    {
+      "id": "cvs-control",
+      "title": "The control: CVS Health",
+      "type": "verdict",
+      "cluster": "control",
+      "featured": true,
+      "summary": "The control that proves the protocol is passable: CVS Health's “Olivia” answered the same eight questions 7 of 7 PASS and requested no personal information at all.",
+      "evidence": "“CVS Health's 'Olivia' answered the same protocol 7 of 7 PASS and requested no personal information.” — Operation Front Door",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "control"
+      ],
+      "details": "Its vendor could not be confirmed from the session, so it is filed separately and is not charged to Paradox — it is in the record because it shows the test can be passed."
+    },
+    {
+      "id": "filed-separately",
+      "title": "Filed separately",
+      "type": "record",
+      "cluster": "control",
+      "summary": "Three more assistants the audit refused to charge to Paradox on unconfirmed attribution. Procter & Gamble's Emma scored 0 of 8 without demanding information; Wendy's “Patty” was unattributed and not scored; Advantage Solutions' “Andi” scored 0 of 8 — with one seam the audit records carefully and claims no further.",
+      "evidence": "Andi's “single canned answer is, however, character-identical to a deflection sentence documented inside two confirmed Paradox deployments the same day; the likelihood is recorded in its file, the attribution is not claimed.” — Operation Front Door",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "control"
+      ]
+    },
+    {
+      "id": "no-assistant",
+      "title": "25 doors, no assistant",
+      "type": "record",
+      "cluster": "control",
+      "summary": "The negative space of the audit: 25 employers where no candidate-facing chat assistant was found on the live careers path — recorded as negative findings, not skipped. The list includes Workday itself, formally rechecked in Phase 5, and U.S. Xpress, whose documented assistant “Nick” was not found live.",
+      "evidence": "“These employers were visited and no candidate-facing chat assistant was found on the live careers path. Negative findings, recorded as found.” — evidence vault",
+      "sources": [
+        "fd-vault"
+      ],
+      "themes": [
+        "control"
+      ]
+    },
+    {
+      "id": "tally",
+      "title": "The tally",
+      "type": "verdict",
+      "cluster": "audit",
+      "featured": true,
+      "summary": "The audit's bottom line, and the numbers every other node hangs from: 247 scored answers across 32 confirmed Paradox deployments — 3 PASS, 42 PARTIAL, 202 FAIL. Phase 3 produced the first pass; Phase 5 produced the other two and half the deployments' worth of failures in a single day.",
+      "evidence": "Per-phase totals: 247 scored · 32 deployments · 3 PASS / 42 PARTIAL / 202 FAIL — evidence vault",
+      "when": "6–7 November 2026",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "sources": [
+        "fd-vault"
+      ],
+      "themes": [
+        "audit",
+        "verdict"
+      ]
+    },
+    {
+      "id": "vault",
+      "title": "The evidence vault",
+      "type": "record",
+      "cluster": "audit",
+      "summary": "Everything behind the findings is public: all 64 session records, transcripts verbatim and preserved separately from interpretation, the raw scoring CSVs and the per-phase tallies. The audit's claims can be re-run by anyone who doubts them — that is the design, not a courtesy.",
+      "evidence": "“Anyone can re-run the protocol and check our work.” — evidence vault",
+      "sources": [
+        "fd-vault"
+      ],
+      "themes": [
+        "audit"
+      ]
+    },
+    {
+      "id": "documented-137",
+      "title": "137 documented customers",
+      "type": "record",
+      "cluster": "audit",
+      "summary": "The tested 32 sit inside a wider documented population: 137 companies where a fetched public source names Paradox as their hiring-chatbot vendor.",
+      "evidence": "“This is a documented-evidence compilation, not a census” — the documented-customer list; total documented companies: 137",
+      "sources": [
+        "fd-customers"
+      ],
+      "themes": [
+        "audit",
+        "scale"
+      ],
+      "details": "The classes: 32 tested live, 41 from vendor case studies, 55 vendor-named elsewhere (press releases, webinars, the client board), 9 independently reported. The audit is explicit that this is a compilation, not a census: absence from the list proves nothing."
+    },
+    {
+      "id": "corrections",
+      "title": "Corrections, published",
+      "type": "record",
+      "cluster": "audit",
+      "summary": "The audit corrects itself in public, on the same page as its findings — three entries so far, including a one-row reclassification where the running tally and the filed scoring sheets disagreed.",
+      "evidence": "“The filed CSVs govern.” — corrections log, on the re-derived tally of 1 PASS / 38 PARTIAL / 152 FAIL for Phases 1–4",
+      "when": "November 2026",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "audit"
+      ],
+      "details": "Entry one: a customer-list class split corrected after a parser missed three-column Client Board rows (the total was always 137). Entry three: the Phase 5 extension, recorded as an extension of the record, not a correction of it."
+    },
+    {
+      "id": "delivered",
+      "title": "The report, delivered",
+      "type": "event",
+      "cluster": "audit",
+      "summary": "The audit did not publish and walk away. On 12–13 November 2026 its full report was sent to every company it names — the posture being that every company receives the full report and no one is singled out: we understand it's not your fault; it is still your name.",
+      "evidence": "31 of 32 audited companies reached with the full report, 12–13 November 2026 — report delivery record",
+      "when": "12–13 November 2026",
+      "start": "2026-11-12",
+      "end": "2026-11-13",
+      "sources": [
+        "fd-delivery"
+      ],
+      "themes": [
+        "audit"
+      ]
+    },
+    {
+      "id": "southern-rock",
+      "title": "Southern Rock, unreached",
+      "type": "lead",
+      "cluster": "audit",
+      "summary": "One open item in the delivery record, stated plainly: Southern Rock Restaurants is the only audited company the report never reached — no public contact route for it exists. Its deployment is in the findings all the same: Savannah scored 0 of 8, with the candidate's name demanded nine times.",
+      "evidence": "Southern Rock Restaurants: “scored 0/0/8 — name demanded 9 times, zero substantive answers” — documented-customer list",
+      "sources": [
+        "fd-delivery",
+        "fd-customers"
+      ],
+      "themes": [
+        "audit",
+        "open lead"
+      ]
+    },
+    {
+      "id": "nq-template-owner",
+      "title": "Who owns the template?",
+      "type": "lead",
+      "cluster": "audit",
+      "summary": "An open question, not a finding. The vendor's assistant called shared template authorship the most defensible inference — but the first of its eight controls, template provenance, has no public record.",
+      "evidence": "Control 1 — “Template provenance — owner, version, change history, approval authority, rollback.” No public provenance record exists.",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "audit",
+        "next questions"
+      ],
+      "details": "Who writes the sentences 32 brands speak — and who can change them, approve them, roll them back?"
+    },
+    {
+      "id": "nq-retest",
+      "title": "Does it still behave this way?",
+      "type": "lead",
+      "cluster": "audit",
+      "summary": "An open question. The audit is a snapshot from 6–7 November 2026, and deployments change over time — the customer list itself records documented deployments that were not found live. The check is mechanical: run the identical eight questions again and compare, answer by answer.",
+      "evidence": "“Deployments also change over time” — the documented-customer list's own caveat",
+      "sources": [
+        "fd-customers"
+      ],
+      "themes": [
+        "audit",
+        "next questions"
+      ]
+    },
+    {
+      "id": "nq-custody",
+      "title": "Where does the data go?",
+      "type": "lead",
+      "cluster": "audit",
+      "summary": "An open question — deliberately not a finding. The audit accepts that its evidence does not establish candidate data is sold; what happens to the identity collected at the gate is not publicly demonstrated.",
+      "evidence": "Control 4 — “Candidate visibility — plain-language notice naming employer, Workday, Paradox, processors, purposes, retention, complaint route.” Not publicly demonstrated.",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "audit",
+        "next questions"
+      ],
+      "details": "Retention, processors, and whether a candidate can see their own interaction record are controls 4 and 6 in the vendor's own list — candidate visibility and candidate evidence."
+    },
+    {
+      "id": "nq-assessment",
+      "title": "Who tests candidate treatment?",
+      "type": "lead",
+      "cluster": "audit",
+      "summary": "The last open question, and the one the whole audit hangs on: security properties get stamps and published assessments; candidate treatment — the thing this audit measured — has no equivalent public evidence, a gap the vendor's own assistant named.",
+      "evidence": "“Workday has not publicly demonstrated equivalent, standardized evidence for the candidate-experience properties you tested.” — Workday's Brand Concierge",
+      "sources": [
+        "fd-home"
+      ],
+      "themes": [
+        "audit",
+        "next questions"
+      ],
+      "details": "Control 8 asks for published tests and stamps covering candidate treatment, not only security. Nobody publishes them yet."
+    }
+  ],
+  "edges": [
+    {
+      "source": "front-door",
+      "target": "cea",
+      "label": "audits the product now sold as",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "sixty-four",
+      "label": "visited",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "eight-questions",
+      "label": "tested every deployment with",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "tally",
+      "label": "concludes",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "f2",
+      "label": "found",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "three-passes",
+      "label": "also recorded",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "concierge",
+      "label": "was put to",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge"
+      ]
+    },
+    {
+      "source": "front-door",
+      "target": "cvs-control",
+      "label": "is controlled by",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "cea",
+      "target": "conversational-recruiting",
+      "label": "is sold as",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge"
+      ]
+    },
+    {
+      "source": "conversational-recruiting",
+      "target": "capability-claim",
+      "label": "surfaces in-session as",
+      "kind": "inferred"
+    },
+    {
+      "source": "capability-claim",
+      "target": "f3",
+      "label": "appears, character-identical, as",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "concierge",
+      "target": "vendor-standard",
+      "label": "articulated",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge"
+      ]
+    },
+    {
+      "source": "vendor-standard",
+      "target": "cea",
+      "label": "is the stated standard for",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge"
+      ]
+    },
+    {
+      "source": "vendor-standard",
+      "target": "f2",
+      "label": "is contradicted by",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge",
+        "fd-home"
+      ]
+    },
+    {
+      "source": "eight-questions",
+      "target": "candidates-chair",
+      "label": "is asked from",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "eight-questions",
+      "target": "scoring",
+      "label": "is scored by",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "phases",
+      "target": "eight-questions",
+      "label": "ran",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "sixty-four",
+      "target": "phases",
+      "label": "were visited across",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "sixty-four",
+      "target": "documented-137",
+      "label": "is documented against",
+      "kind": "explicit",
+      "sources": [
+        "fd-customers"
+      ]
+    },
+    {
+      "source": "sixty-four",
+      "target": "no-assistant",
+      "label": "found no assistant at",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "f2",
+      "target": "f1",
+      "label": "left unanswered",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "f1",
+      "target": "f4",
+      "label": "worsens into",
+      "kind": "inferred"
+    },
+    {
+      "source": "f4",
+      "target": "f5",
+      "label": "extended, in live traffic, to",
+      "kind": "inferred"
+    },
+    {
+      "source": "f5",
+      "target": "f6",
+      "label": "ended in",
+      "kind": "inferred"
+    },
+    {
+      "source": "f6",
+      "target": "three-passes",
+      "label": "is broken only by",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "f6",
+      "target": "eight-controls",
+      "label": "is answered by candidate control",
+      "kind": "inferred"
+    },
+    {
+      "source": "f5",
+      "target": "eight-controls",
+      "label": "is answered by pre-launch testing",
+      "kind": "inferred"
+    },
+    {
+      "source": "f2",
+      "target": "four-wordings",
+      "label": "repeats through",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "four-wordings",
+      "target": "vendor-authorship",
+      "label": "points to",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "f3",
+      "target": "vendor-authorship",
+      "label": "is attributed by the vendor's own assistant to",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "f2",
+      "target": "compelled-intake",
+      "label": "amounts to",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "concierge-concedes",
+      "target": "compelled-intake",
+      "label": "names",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "vendor-authorship",
+      "target": "compelled-intake",
+      "label": "makes refusal futile",
+      "kind": "inferred"
+    },
+    {
+      "source": "compelled-intake",
+      "target": "consent-necessity",
+      "label": "becomes",
+      "kind": "inferred"
+    },
+    {
+      "source": "f2",
+      "target": "consent-necessity",
+      "label": "confronts the candidate with",
+      "kind": "inferred"
+    },
+    {
+      "source": "consent-necessity",
+      "target": "candidates-records",
+      "label": "leaves the candidate as",
+      "kind": "inferred"
+    },
+    {
+      "source": "acquisition",
+      "target": "cea",
+      "label": "renamed the product",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "concierge",
+      "target": "acquisition",
+      "label": "confirms",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge"
+      ]
+    },
+    {
+      "source": "concierge",
+      "target": "concierge-concedes",
+      "label": "went on to",
+      "kind": "explicit",
+      "sources": [
+        "fd-concierge"
+      ]
+    },
+    {
+      "source": "concierge-concedes",
+      "target": "candidates-records",
+      "label": "supplies",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "concierge-concedes",
+      "target": "eight-controls",
+      "label": "and authored",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "concierge",
+      "target": "eight-controls",
+      "label": "proposed",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "concierge",
+      "target": "two-limits",
+      "label": "also held",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "two-limits",
+      "target": "front-door",
+      "label": "bounds",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "tally",
+      "target": "corrections",
+      "label": "was itself corrected in",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "corrections",
+      "target": "vault",
+      "label": "is filed in",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "vault",
+      "target": "eight-questions",
+      "label": "preserves every run of",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "tally",
+      "target": "delivered",
+      "label": "was delivered, company by company, as",
+      "kind": "explicit",
+      "sources": [
+        "fd-delivery"
+      ]
+    },
+    {
+      "source": "delivered",
+      "target": "southern-rock",
+      "label": "reached all but",
+      "kind": "explicit",
+      "sources": [
+        "fd-delivery"
+      ]
+    },
+    {
+      "source": "cvs-control",
+      "target": "scoring",
+      "label": "passes under the same",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "cvs-control",
+      "target": "filed-separately",
+      "label": "is filed alongside",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "filed-separately",
+      "target": "vendor-authorship",
+      "label": "echoes, unattributed",
+      "kind": "inferred"
+    },
+    {
+      "source": "eight-controls",
+      "target": "nq-template-owner",
+      "label": "asks first for",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "eight-controls",
+      "target": "nq-custody",
+      "label": "includes candidate visibility",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "eight-controls",
+      "target": "nq-assessment",
+      "label": "ends with",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "phases",
+      "target": "nq-retest",
+      "label": "invites",
+      "kind": "inferred"
+    },
+    {
+      "source": "vault",
+      "target": "cvs-control",
+      "label": "also preserves",
+      "kind": "explicit",
+      "sources": [
+        "fd-vault"
+      ]
+    },
+    {
+      "source": "corrections",
+      "target": "southern-rock",
+      "label": "extended the record to",
+      "kind": "explicit",
+      "sources": [
+        "fd-home"
+      ]
+    },
+    {
+      "source": "nq-template-owner",
+      "target": "nq-custody",
+      "label": "followed by",
+      "kind": "inferred"
+    },
+    {
+      "source": "nq-custody",
+      "target": "nq-assessment",
+      "label": "followed by",
+      "kind": "inferred"
+    },
+    {
+      "source": "nq-assessment",
+      "target": "nq-retest",
+      "label": "followed by",
+      "kind": "inferred"
+    }
+  ],
+  "stories": [
+    {
+      "id": "the-test",
+      "title": "The test: eight questions from the candidate's chair",
+      "summary": "How the audit was run, before what it found: 64 employers visited, one live posting each, the same eight questions everywhere, asked as a candidate asks them — and declined, politely and repeatedly, whenever the assistant asked for a name instead. The protocol is the argument: hold the questions constant and whatever varies is the product.",
+      "steps": [
+        "front-door",
+        "sixty-four",
+        "phases",
+        "eight-questions",
+        "candidates-chair",
+        "scoring",
+        "tally"
+      ]
+    },
+    {
+      "id": "the-findings",
+      "title": "What the assistants did",
+      "summary": "The findings in the order they close in on a candidate. First the door itself: your name, demanded before anything, as many as nine times. Behind it, a product that cannot describe the job it is attached to, then states falsehoods about it, then breaks in ordinary production ways — and almost never points to the form or a human. The three passes are the exception that names the rule: it passed when it stepped aside.",
+      "steps": [
+        "f2",
+        "f1",
+        "f4",
+        "f5",
+        "f6",
+        "three-passes"
+      ]
+    },
+    {
+      "id": "one-template",
+      "title": "One template, many brands",
+      "summary": "Why this is one finding and not thirty-two. The same sentence, the same four name demands, the same deflection — character-identical across unrelated employers — point to a single shared template, an authorship the vendor's own assistant named as the most defensible inference. Underneath it sits the pattern the audit names: collection without custody, consent extracted under the necessity of needing the job, and a candidate who ends the process as a record.",
+      "steps": [
+        "capability-claim",
+        "f3",
+        "four-wordings",
+        "vendor-authorship",
+        "compelled-intake",
+        "consent-necessity",
+        "candidates-records"
+      ]
+    },
+    {
+      "id": "the-vendor-answers",
+      "title": "The vendor's own assistant answers",
+      "summary": "The audit's strangest chapter: put to Workday's prospect-facing assistant — a real conversational agent that answers first — the evidence was conceded in the vendor's own words, the standard was stated plainly, and the control set the candidate product should meet was authored on the spot. What the Concierge would not concede, it bounded honestly, and the audit accepts both limits.",
+      "steps": [
+        "acquisition",
+        "cea",
+        "concierge",
+        "vendor-standard",
+        "f2",
+        "concierge-concedes",
+        "eight-controls",
+        "two-limits"
+      ]
+    },
+    {
+      "id": "the-audit-and-next",
+      "title": "The audit — and what we would ask next",
+      "summary": "The instrument, checked the way it checks others: a tally with a published corrections log beside it, a control case that passed 7 of 7 and was still not charged to the vendor, transcripts anyone can re-run, and the full report delivered to every company it names — all but one. The path ends where the audit ends: not on a conclusion but on the questions still open.",
+      "steps": [
+        "tally",
+        "delivered",
+        "corrections",
+        "southern-rock",
+        "vault",
+        "cvs-control",
+        "filed-separately",
+        "nq-template-owner",
+        "nq-custody",
+        "nq-assessment",
+        "nq-retest"
+      ]
+    }
+  ]
+}

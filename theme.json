@@ -1,0 +1,61 @@
+{
+  "brandSources": [
+    {
+      "from": "https://frontdoor.teambotics.app/ via scripts/brand-probe.mjs (2026-11-13)",
+      "note": "Copied from the audit site's own CSS tokens: --paper #faf6ef, --card #fffdf8, --ink #23201b, --line #e5dcc9. The story is the audit's own presentation, so it wears the audit site's paper-and-ink identity exactly.",
+      "what": "bg #faf6ef, surface #fffdf8, text #23201b, line rgba(35,32,27,0.16)"
+    },
+    {
+      "from": "https://frontdoor.teambotics.app/ CSS token --muted (probe, 2026-11-13)",
+      "note": "The site's own muted tone, kept as-is: it clears 4.5:1 on the paper background (about 5.2:1).",
+      "what": "muted #6f675a"
+    },
+    {
+      "from": "https://frontdoor.teambotics.app/ CSS token --accent (probe, 2026-11-13)",
+      "note": "The site's signature brick red — its headline and finding accents. About 7.8:1 on the paper background. Used as the accent and as the Findings cluster colour.",
+      "what": "accent #9a3b2e"
+    },
+    {
+      "from": "https://frontdoor.teambotics.app/ CSS token --press (probe, 2026-11-13)",
+      "note": "The site's second colour is literally named 'press' — the blue of its links and evidence furniture. Used for the Promise cluster (the claim, in print). The remaining cluster colours are neighbours built inside the site's red/blue/ink family: a teal neighbour of press blue for the method, a darkened tan from the site's line colour family for the pattern, a violet neighbour of press blue for the vendor, a deep green for the control cluster (the one cluster whose subject is a pass), and the deep cyan Claim Checker uses for its own audit cluster in the Ground News story, kept so the two dogfood stories share one audit colour. Each clears 3:1 on #faf6ef.",
+      "what": "cluster colours"
+    },
+    {
+      "from": "https://frontdoor.teambotics.app/ via scripts/brand-probe.mjs (2026-11-13)",
+      "note": "The site body type is the ui-sans-serif / system-ui stack (probe: ui-sans-serif ×4 uses; Georgia appears once, for display). The theme uses the same system stack; no webfont, so the page reads identically offline.",
+      "what": "font"
+    },
+    {
+      "from": "editorial choice, recorded here",
+      "note": "No logo is embedded. The wordmark is the audit's own name in plain text, as the audit site presents it.",
+      "what": "no logo"
+    }
+  ],
+  "clusters": {
+    "audit": "#0e7490",
+    "control": "#4c8a1f",
+    "findings": "#9a3b2e",
+    "method": "#146e50",
+    "pattern": "#b0741a",
+    "promise": "#274b8f",
+    "vendor": "#5b4a8a"
+  },
+  "colors": {
+    "accent": "#9a3b2e",
+    "bg": "#faf6ef",
+    "line": "rgba(35,32,27,0.16)",
+    "muted": "#6f675a",
+    "surface": "#fffdf8",
+    "text": "#23201b"
+  },
+  "font": {
+    "body": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif"
+  },
+  "mode": "light",
+  "name": "Operation Front Door — the audit site's paper, ink and press blue",
+  "schemaVersion": 1,
+  "wordmark": {
+    "letterSpacing": "0.02em",
+    "text": "Operation Front Door"
+  }
+}
